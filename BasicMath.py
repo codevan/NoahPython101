@@ -11,17 +11,18 @@ def getRandomNumber(min, max):
     return random.randint(min, max)
 
 Number1 = getRandomNumber(1,5)
-print(Number1)
+#print(Number1)
 Number2 = getRandomNumber(1,5)
-print(Number2)
+#print(Number2)
 
 print("Welcome to the maths game!")
-print("What is Number1 + Number2?")
+print("What is " + str(Number1) + " + " + str(Number2) + "?")
 Answer = Number1 + Number2
 
+#print("Hint:  The answer is " + str(Answer))
 
-if input() == "4":
-#if input() == Answer:
+#if input() == "4":
+if input() == str(Answer):
     print("Correct, you brainiac, you!")
     player_score += 1
 else:
