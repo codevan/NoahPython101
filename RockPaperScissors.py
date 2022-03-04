@@ -7,17 +7,21 @@
 import random
 import time
 
+# Main variables
 rock = 1
 paper = 2
 scissors = 3
 
+# Rules
 names = {rock:  "Rock",  paper: "Paper", scissors: "Scissors"}
 rules = {rock: scissors,paper: rock, scissors: paper}
 
 
+# Scores setup
 player_score = 0
 computer_score = 0
 
+# Functions
 def start():
     print ("Let's play a game of Rock, Paper, Scissors.")
     while game():
